@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { technologies } from '@/data/technologies';
+import SectionHeading from '@/components/ui/SectionHeading';
+import ScrollReveal from '@/components/ui/ScrollReveal';
+export default function Technologies() {
+    return (_jsx("section", { className: "relative py-20 md:py-28 lg:py-32 border-section bg-light-surface", children: _jsxs("div", { className: "container-max section-padding", children: [_jsx(SectionHeading, { eyebrow: "Technologies", title: "Built with modern technology.", subtitle: "We use proven, current tools and frameworks to build solutions that are fast, reliable and scalable." }), _jsx("div", { className: "mt-16 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto", children: technologies.map((tech, i) => (_jsx(ScrollReveal, { stagger: (i % 4) + 1, className: "group", children: _jsxs("div", { className: "glass glass-hover rounded-xl px-6 py-4 flex items-center gap-3 transition-all duration-300 hover:-translate-y-0.5", children: [_jsx("span", { className: "w-2 h-2 rounded-full bg-accent-500 group-hover:bg-accent-400 transition-colors" }), _jsx("span", { className: "text-sm font-medium text-light-muted group-hover:text-light-text transition-colors", children: tech.name }), _jsx("span", { className: "text-xs font-mono text-light-subtle group-hover:text-accent-600/60 transition-colors", children: tech.category })] }) }, tech.name))) })] }) }));
+}

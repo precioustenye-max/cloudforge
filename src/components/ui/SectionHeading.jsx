@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export default function SectionHeading({ eyebrow, title, subtitle, center = true, className = '', }) {
+    return (_jsxs("div", { className: `${center ? 'text-center mx-auto max-w-3xl' : 'max-w-3xl'} ${className}`, children: [eyebrow && (_jsx("div", { className: `reveal ${center ? '' : ''}`, children: _jsxs("span", { className: "inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-accent-600 mb-4", children: [_jsx("span", { className: "h-px w-8 bg-accent-600/40" }), eyebrow, center && _jsx("span", { className: "h-px w-8 bg-accent-600/40" })] }) })), _jsx("h2", { className: "reveal stagger-1 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] tracking-tight text-light-text", children: title }), subtitle && (_jsx("p", { className: "reveal stagger-2 mt-5 text-base sm:text-lg text-light-muted leading-relaxed", children: subtitle }))] }));
+}

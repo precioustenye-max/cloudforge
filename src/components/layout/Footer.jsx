@@ -1,0 +1,21 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Link } from 'react-router-dom';
+import { Twitter, Linkedin, Github, Instagram, Mail, Phone, MessageCircle } from 'lucide-react';
+import { navLinks, company } from '@/data/site';
+import Logo from '@/components/ui/Logo';
+export default function Footer() {
+    const socialIcons = [
+        { Icon: Twitter, href: company.social.twitter, label: 'Twitter' },
+        { Icon: Linkedin, href: company.social.linkedin, label: 'LinkedIn' },
+        { Icon: Github, href: company.social.github, label: 'GitHub' },
+        { Icon: Instagram, href: company.social.instagram, label: 'Instagram' },
+    ];
+    return (_jsx("footer", { className: "relative border-t border-light-border bg-light-surface", children: _jsxs("div", { className: "container-max section-padding py-16", children: [_jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12", children: [_jsxs("div", { className: "lg:col-span-1", children: [_jsx(Logo, {}), _jsx("p", { className: "mt-5 text-sm text-light-muted leading-relaxed max-w-xs", children: company.tagline }), _jsx("div", { className: "flex gap-3 mt-6", children: socialIcons.map(({ Icon, href, label }) => (_jsx("a", { href: href, target: "_blank", rel: "noopener noreferrer", "aria-label": label, className: "w-10 h-10 flex items-center justify-center rounded-lg glass glass-hover text-light-muted hover:text-light-text", children: _jsx(Icon, { size: 18 }) }, label))) })] }), _jsxs("div", { children: [_jsx("h4", { className: "text-sm font-semibold text-light-text mb-5 uppercase tracking-wider", children: "Navigation" }), _jsx("ul", { className: "space-y-3", children: navLinks.map((link) => (_jsx("li", { children: _jsx(Link, { to: link.path, className: "text-sm text-light-muted hover:text-light-text transition-colors", children: link.label }) }, link.path))) })] }), _jsxs("div", { children: [_jsx("h4", { className: "text-sm font-semibold text-light-text mb-5 uppercase tracking-wider", children: "Services" }), _jsx("ul", { className: "space-y-3", children: [
+                                        'Web Development',
+                                        'E-Commerce',
+                                        'Custom Software',
+                                        'Business Automation',
+                                        'UI/UX Design',
+                                        'Digital Transformation',
+                                    ].map((service) => (_jsx("li", { children: _jsx(Link, { to: "/services", className: "text-sm text-light-muted hover:text-light-text transition-colors", children: service }) }, service))) })] }), _jsxs("div", { children: [_jsx("h4", { className: "text-sm font-semibold text-light-text mb-5 uppercase tracking-wider", children: "Get in Touch" }), _jsxs("ul", { className: "space-y-3", children: [_jsx("li", { children: _jsxs("a", { href: `mailto:${company.email}`, className: "flex items-center gap-3 text-sm text-light-muted hover:text-light-text transition-colors", children: [_jsx(Mail, { size: 16, className: "text-accent-500" }), company.email] }) }), _jsx("li", { children: _jsxs("a", { href: `tel:${company.phone}`, className: "flex items-center gap-3 text-sm text-light-muted hover:text-light-text transition-colors", children: [_jsx(Phone, { size: 16, className: "text-accent-500" }), company.phone] }) }), _jsx("li", { children: _jsxs("a", { href: `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, '')}`, target: "_blank", rel: "noopener noreferrer", className: "flex items-center gap-3 text-sm text-light-muted hover:text-light-text transition-colors", children: [_jsx(MessageCircle, { size: 16, className: "text-accent-500" }), "WhatsApp"] }) })] })] })] }), _jsxs("div", { className: "mt-12 pt-8 border-t border-light-border flex flex-col sm:flex-row items-center justify-between gap-4", children: [_jsx("p", { className: "text-sm text-light-subtle", children: "\u00A9 2026 Cloudforge. All rights reserved." }), _jsxs("div", { className: "flex gap-6", children: [_jsx(Link, { to: "/privacy", className: "text-sm text-light-subtle hover:text-light-text transition-colors", children: "Privacy Policy" }), _jsx(Link, { to: "/terms", className: "text-sm text-light-subtle hover:text-light-text transition-colors", children: "Terms of Service" })] })] })] }) }));
+}

@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+export default function OngoingProjects() {
+    return (_jsx("section", { className: "border-section bg-light-surface py-16", children: _jsx("div", { className: "container-max section-padding", children: _jsxs("div", { className: "glass-card rounded-2xl p-8 md:p-12 flex flex-col md:flex-row md:items-center justify-between gap-8", children: [_jsxs("div", { children: [_jsx("p", { className: "text-sm font-medium text-accent-600 mb-3", children: "Currently in progress" }), _jsx("h2", { className: "text-3xl font-bold text-light-text", children: "See what we are building next." }), _jsx("p", { className: "mt-3 max-w-2xl text-light-muted", children: "Explore our ongoing projects, the technology behind them, and how development is progressing." })] }), _jsxs(Link, { to: "/ongoing-projects", className: "inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-accent-600 px-5 py-3 text-sm font-medium text-white hover:bg-accent-700 transition-colors", children: ["View Ongoing Projects ", _jsx(ArrowRight, { size: 16 })] })] }) }) }));
+}

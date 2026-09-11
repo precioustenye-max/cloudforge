@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { Home, ArrowLeft } from 'lucide-react';
+import SEO from '@/components/ui/SEO';
+import Button from '@/components/ui/Button';
+export default function NotFound() {
+    return (_jsxs(_Fragment, { children: [_jsx(SEO, { title: "404 \u2014 Page Not Found | Cloudforge" }), _jsxs("section", { className: "min-h-screen flex items-center justify-center relative overflow-hidden pt-24", children: [_jsx("div", { className: "absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[400px] bg-accent-400/8 rounded-full blur-[120px]" }), _jsxs("div", { className: "container-max section-padding relative z-10 text-center", children: [_jsx("h1", { className: "text-8xl sm:text-9xl lg:text-[12rem] font-display font-bold text-gradient-accent leading-none", children: "404" }), _jsx("h2", { className: "mt-6 text-2xl sm:text-3xl font-bold text-light-text", children: "Page not found" }), _jsx("p", { className: "mt-4 text-light-muted max-w-md mx-auto leading-relaxed", children: "The page you\u2019re looking for doesn\u2019t exist or has been moved." }), _jsxs("div", { className: "mt-10 flex flex-col sm:flex-row justify-center gap-4", children: [_jsxs(Button, { to: "/", size: "lg", children: [_jsx(Home, { size: 18 }), "Back to Home"] }), _jsxs(Button, { to: "/contact", variant: "secondary", size: "lg", children: [_jsx(ArrowLeft, { size: 18 }), "Contact Us"] })] })] })] })] }));
+}
