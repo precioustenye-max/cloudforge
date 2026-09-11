@@ -15,6 +15,7 @@ export interface Service {
   shortDescription: string;
   description: string;
   features: string[];
+  image?: string;
 }
 
 export const services: Service[] = [
@@ -32,6 +33,7 @@ export const services: Service[] = [
       'Custom web applications',
       'Performance & SEO optimization',
     ],
+    image: '/web designing_.... ✨',
   },
   {
     id: 'ecommerce',
@@ -47,6 +49,7 @@ export const services: Service[] = [
       'Inventory management',
       'Conversion-optimized design',
     ],
+    image: '/Pasted image.png',
   },
   {
     id: 'custom-software',
@@ -62,6 +65,7 @@ export const services: Service[] = [
       'Internal business tools',
       'APIs & integrations',
     ],
+    image: '/Pasted image (2).png',
   },
   {
     id: 'business-automation',

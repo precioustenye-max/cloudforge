@@ -61,9 +61,16 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="lg:[direction:ltr]">
-                  <div className="glass-card rounded-2xl p-8 lg:p-12 h-full min-h-[300px] flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-40 h-40 bg-accent-400/5 rounded-full blur-[60px]" />
-                    <Icon size={80} className="text-accent-500/20" />
+                  <div className="glass-card rounded-2xl h-full min-h-[300px] flex items-center justify-center relative overflow-hidden">
+                    {service.image ? (
+                      <img src={service.image} alt={`${service.title} project preview`} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                    ) : (
+                      <>
+                        <div className="absolute top-0 right-0 w-40 h-40 bg-accent-400/5 rounded-full blur-[60px]" />
+                        <Icon size={80} className="text-accent-500/20" />
+                      </>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-light-surface/30 to-transparent" />
                   </div>
                 </div>
               </ScrollReveal>

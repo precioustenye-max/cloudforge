@@ -31,38 +31,6 @@ export const projectCategories = [
 
 export const projects: Project[] = [
   {
-    slug: 'zavora-homes',
-    name: 'ZavoraHomes',
-    category: 'E-commerce',
-    shortDescription:
-      'A modern digital storefront for a furniture and interior design business.',
-    description:
-      'ZavoraHomes needed an online presence that matched the quality of their furniture. We built a full e-commerce platform with a curated catalog, seamless checkout, and an admin panel for managing products and orders.',
-    image:
-      'https://images.pexels.com/photos/7621355/pexels-photo-7621355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    technologies: ['React', 'Node.js', 'Tailwind CSS'],
-    caseStudy: {
-      challenge:
-        'ZavoraHomes relied on in-person sales and social media. They had no way to showcase their full catalog online, and managing inquiries was manual and time-consuming.',
-      solution:
-        'We designed and developed a complete e-commerce platform with a curated product catalog, secure checkout, order management, and a responsive design that reflects the brand\u2019s premium positioning.',
-      process:
-        'We started with a discovery phase to understand the product line and customer journey. After wireframing the key flows, we designed a clean, furniture-focused interface, then built the storefront and admin panel in parallel, integrating payment processing before launch.',
-      technologies:
-        'React, Node.js, Tailwind CSS',
-      results: [
-        'Full online catalog with search and filtering',
-        'Secure checkout with multiple payment options',
-        'Admin dashboard for product and order management',
-        'Mobile-responsive design for browsing on any device',
-      ],
-      screenshots: [
-        'https://images.pexels.com/photos/7621355/pexels-photo-7621355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        'https://images.pexels.com/photos/32702922/pexels-photo-32702922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      ],
-    },
-  },
-  {
     slug: 'trendai',
     name: 'TrendAI',
     category: 'AI / Productivity',
@@ -71,7 +39,7 @@ export const projects: Project[] = [
     description:
       'TrendAI is a concept productivity platform that brings AI-powered tools into a single, clean interface. We designed the user experience and built a functional prototype to validate the core idea.',
     image:
-      'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/Pasted image (4).png',
     technologies: ['React', 'Node.js', 'Tailwind CSS'],
     caseStudy: {
       challenge:
@@ -89,8 +57,7 @@ export const projects: Project[] = [
         'Scalable architecture for future development',
       ],
       screenshots: [
-        'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        'https://images.pexels.com/photos/8566526/pexels-photo-8566526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        '/web designing_.... ✨',
       ],
     },
   },
@@ -135,7 +102,7 @@ export const projects: Project[] = [
     description:
       'We designed and built Cloudforge\'s company website to communicate the brand clearly, showcase its services and projects, and make it easy for prospective clients to start a conversation.',
     image:
-      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/Pasted image (3).png',
     technologies: ['React', 'Node.js', 'Tailwind CSS'],
     caseStudy: {
       challenge:
@@ -153,8 +120,7 @@ export const projects: Project[] = [
         'Project inquiry form for converting prospective clients',
       ],
       screenshots: [
-        'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        'https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        '/web designing_.... ✨',
       ],
     },
   },
@@ -167,7 +133,7 @@ export const projects: Project[] = [
     description:
       'CamHire is a focused vehicle-hire experience designed to make it easier for customers to explore available vehicles and connect with the right hire option.',
     image:
-      'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/Pasted image (2).png',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
     caseStudy: {
       challenge:
@@ -183,7 +149,7 @@ export const projects: Project[] = [
         'Simplified path from discovery to enquiry',
       ],
       screenshots: [
-        'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        '/Pasted image (2).png',
       ],
     },
   },
@@ -225,7 +191,7 @@ export const projects: Project[] = [
     description:
       'ChasinDecor is an e-commerce experience designed to showcase décor products through an inviting, image-led storefront that supports browsing and purchase decisions.',
     image:
-      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/Pasted image.png',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
     caseStudy: {
       challenge:
@@ -241,7 +207,7 @@ export const projects: Project[] = [
         'Reusable foundation for expanding the product catalog',
       ],
       screenshots: [
-        'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        '/Pasted image.png',
       ],
     },
   },
